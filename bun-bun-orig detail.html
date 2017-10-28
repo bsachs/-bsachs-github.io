@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="./bb-style.css" type="text/css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Pangolin|Roboto" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="main.js" type="text/javascript"></script>
+</head>
+
+<!-- detail page for Original Bun -->
+<body>
+<header>
+<div class="other-headers"><h1>World Famous Original</h1>
+</div>
+</header>
+
+<div class="nav-bar" id="origBun-nav">
+<a href="./index.html">Home</a>
+<a class="current" href="./bun-bun-orig detail.html">Original Bun</a>
+<a href="./bun-bun-allitems.html">All Buns</a>
+<a href="./shopping-cart.html">View Cart</a>
+</div>
+
+<!-- history of Original Bun-->
+<div class="product-detail">
+<img id="bun-detail-photo" src="./Images/WF original.jpg" Alt="OG bun">
+<h3>Best seller since 1991<h3>
+<div class="prod-narrative"><p>The bun that made us famous. Our Original Bun comes from a recipe zealously guarded and handed down through generations of Pittsburghers and
+pride ourselves in using only the finest local ingredients - even our flour is from sun-drenched whole wheat farms on the top of the
+Carnegie Museum of Science!</p></div></div>
+<div class="size-text"><p></p></div>
+<div class="bunPrice"> $3.50 </div>
+</div>
+
+<!-- indicate quantity of each bun set-->
+</br>
+<div id="qty">Quantity:
+<input id="quantity" type="number" size="2"></input>
+</div>
+
+<!-- create a div/element which indicates the size of the order -->
+<div class="sizes">
+<input type="radio" name="size" value="Single" id="single" checked="checked">Single
+<input type="radio" name="size" value="Half dozen" id="half-dozen">Half Dozen
+<input type="radio" name="size" value="Dozen" id="dozen">Dozen
+</div>
+
+<!-- create a div/element which allows flavors to be chosen -->
+<!-- default to hidden, if half dozen or dozen are selected, then reappears-->
+<div class="flavor-selection-buttons">
+<div class="select-flavors-1" hidden>
+    <p id="flavorText">Create your own bun mix! Select up to two additional flavors at no additional cost</p>
+  <button class="dropbtn">1st New Flavor
+  <select id="flavorSelect1">
+    <option>Original (Gluten-free)</option>
+    <option>Original (Vegan)</option>
+    <option>Bacon</option>
+    <option>Birthday Cake</option>
+    <option>Blackberry</option>
+    <option>Caramel Pecan</option>
+    <option>Carrot Cake</option>
+    <option>Cranberry</option>
+    <option>Lemon Lavender</option>
+    <option>Maple Apple Pecan</option>
+    <option>Old Fashioned Buttermilk</option>
+    <option>Pumpkin Spice</option>
+    <option>Strawberry Rhubarb</option>
+    <option>Walnut</option>
+</select>
+</div>
+</div>
+
+<div class="select-flavors-2" hidden>
+  <button class="dropbtn">Second New Flavor
+  <select id="flavorSelect2">
+      <option>Original (Gluten-free)</option>
+      <option>Original (Vegan)</option>
+      <option>Bacon</option>
+      <option>Birthday Cake</option>
+      <option>Blackberry</option>
+      <option>Caramel Pecan</option>
+      <option>Cranberry</option>
+      <option>Lemon Lavender</option>
+      <option>Maple Apple Pecan</option>
+      <option>Old Fashioned Buttermilk</option>
+      <option>Pumpkin Spice</option>
+      <option>Strawberry Rhubarb</option>
+      <option>Walnut</option>
+</select>
+</div>
+
+<!-- Add bun, use "addToCart" js function to append to array and stringify in localStorage -->
+<div class="toCart"> <button id="addToCart">Add to Cart</button></div>
+
+<footer>
+    <p> Pittsburgh, PA 2017</p>
+</footer>
+</body>
+</html>
